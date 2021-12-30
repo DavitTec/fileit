@@ -36,7 +36,7 @@ Ideally, in a multiuser environment,
 
 > old objects, >1 year, should be archived into annual Archives and indexed for easy retrieval or access.  
 
-> objects can also inclde emails and to be converted to basic Text and attachements archived out.  
+> objects can also include emails and to be converted to basic Text and attachements archived out.  
 
 ## Tree
 
