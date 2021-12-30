@@ -5,7 +5,7 @@
 Welcome to the  ![DAVit](https://avatars.githubusercontent.com/u/8759293?s=20&u=80214f09c8a6f5a219c40a62af483e694cb6fed8&v=4)DavitTec fileme repository.
 
 The purpose of this project is create system structure for single or multi user or electonic filing system for 
-all kinds of data which needs appropriate list, read, write, delete access, searched, archived, categorised and retrieved.
+all kinds of data which needs appropriate list, read, write, delete access, searched, archived, categorised and retrieved. We were inspired to start this upon discoving [datacurator-filetree](https://github.com/roboyoshi/datacurator-filetree) by roboyoshi and [TomFrankly](https://github.com/TomFrankly)
 
 The objective is to increase efficiency of filing and searching, reduce duplicates, increase ownership and versioning system.
 
