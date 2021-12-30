@@ -85,4 +85,4 @@ For this project, we assume you control the whole system and there is NO open ar
 
 ## Contributing
 
-If you are interested in joining our efforts, please read the [CONTRIBUTING.md](CONTRIBUTING.md).
+If you are interested in joining our efforts, please read the [contribute.md](contribute.md).
