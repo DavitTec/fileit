@@ -23,7 +23,9 @@ Can we develop a filing system protocol that is semi automatic and trasparent?
 
 Ideally, in a multiuser environment, 
 > duplications should be reduced
+
 > digital asset (file/folder) may include orginality and validation with other metadata
+
 > access for list, read, write or delele be flagged under protocol
 
 
