@@ -9,13 +9,16 @@ all kinds of data which needs appropriate list, read, write, delete access, sear
 
 The objective is to increase efficiency of filing and searching, reduce duplicates, increase ownership and versioning system.
 
-To be methodological in for USER and System's heirachicial activity. 
+To be methodological for USER and System's heirachicial activity. 
 
-However, many exsisting system flavours; Apple, Android, Google, Microsoft etc and the varied unixs and lnoxes, 
+However, many existing system flavours; including Apple, Android, Google, Microsoft etc and the varied unixs and lnoxes, mono or mixed,
 provide similar Default folders for the USER. 
 
-But unadministered systems tend to follow the default FOLDER structures and usually get clottered, while the Admininisterd usually follow a custoimised structure 
-to suit system architectures and the Admin protocols.  While assuming every user follows protocols.   
+But unadministered systems tend to follow the default FOLDER structures and usually get clottered, while the Admininistered usually follow a custoimised structure 
+to suit system architectures and the Admin protocols.  While assuming every user follows protocols.  
+
+Other issues to consider is the create flexibility for different cultures and languages in the mix.
+This can be at document/FONT level to overal menu and editing structures.
 
 HERE, we present one option that maybe useful for both single or multi user/corporate. 
 
