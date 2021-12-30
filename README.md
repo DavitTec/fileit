@@ -59,7 +59,7 @@ In the past, a scholar, shopkeeper, salesman, or librarian developed a system to
 
 With the advance of computer and later infomation technology age many old systems adopted the old common methods, including the "desktop", which contained our daily systems of bygone times. These included the dairy, home folders with foolscap headings, business-card holder and the index card system, linking to a Filing cabinet.  
 
-However, in the past, tangible space was abundant and digital space was premium. Taking into account can each digit was costly in terms of digital space. For example, many systems abbreviated folder and file naming structures to 3 letters and files limited to single lowercase character set 8-dot-3 limitations.  Hence we have "doc" for documents, "lib" for libraries and "usr" for users, etc.
+However, in the past, tangible space was abundant and digital space was premium. Taking this into account, each gigital digit was costly in terms of digital space. For example, many systems abbreviated folder and file naming structures to 3 letters and files limited to single lowercase character set 8-dot-3 limitations.  Hence we have "doc" for documents, "lib" for libraries and "usr" for users, etc.
 
 Nowadays, we have tangible space at a premium cost and digital space abundance or seemingly limitless and cost less. 
 This brought on the effect of effortless digital storage, backups, duplications, and mutations of the same digital objects in a clustered world, both in the homedomain and also within the internet global domain.  Finding originality has somewhat been obscured by the mass storage domains and systems. This brings validation and honesty into question in all things digital. 
