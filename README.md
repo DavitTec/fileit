@@ -28,6 +28,15 @@ Ideally, in a multiuser environment,
 
 > access for list, read, write or delele be flagged under protocol
 
+> folder system levels should not be too deep, stay with 5 levels if possible
+
+> each folder should limit subfolders/categories to max 20 not more than 40
+
+> first option is to search for an object,  instesd to browsing through folders 
+
+> old objects, >1 year, should be archived into annual Archives and indexed for easy retrieval or access.  
+
+> objects can also inclde emails and to be converted to basic Text and attachements archived out.  
 
 ## Tree
 
