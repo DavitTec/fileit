@@ -34,7 +34,7 @@ Ideally, in a multiuser environment,
 
 Base design
 
-![](overview.png)
+![](Mind%20Map.jpg)
 
 https://miro.com/app/board/uXjVOYARwFE=/
 
