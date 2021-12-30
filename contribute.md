@@ -3,7 +3,7 @@
 We are open to anyone open to contribute. Please feel free to fork & edit as you wish. 
 
 We appreciate any contributions that helps the mission and goals of this Project
-and hope we can develop a more efficient system that can be appleid to the basic
+and hope we can develop a more efficient system that can be applied to the basic
 digital creator or author.
 
 
@@ -27,5 +27,6 @@ not yet documented here or considered.
 Your contributions on Project goals, language and or proof editing, the structure and guides
 are appreciated.
 
+[<back](README.md)
 
 ------
