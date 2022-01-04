@@ -6,7 +6,7 @@ Please read [WiKi](https://github.com/DavitTec/fileme/wiki) for background infor
 
 
 There is nothing much here yet as useful Tools, except a mini shell script to create some directories with some symbolic links.
-The big question is to decide on a base operating system, Linux, Apple or Windows. The initial focus on the file system structure may be Linux.
+The big question is to decide on a base operating system, Linux, MacOS or Windows. The initial focus on the file system structure may be Linux.
 
 We may consider some from small to big [Case Studies](https://github.com/DavitTec/fileme/wiki/Case-Studies) to get us through from issues to analsys, problem solving and developing solutions. 
 
