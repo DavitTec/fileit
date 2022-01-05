@@ -8,7 +8,31 @@ Please read [WiKi](https://github.com/DavitTec/fileme/wiki) for background infor
 There is nothing much here yet as useful Tools, except a mini shell script to create some directories with some symbolic links.
 The big question is to decide on a base operating system, Linux, MacOS or Windows. The initial focus on the file system structure may be Linux.
 
-We may consider some from small to big [Case Studies](https://github.com/DavitTec/fileme/wiki/Case-Studies) to get us through from issues to analsys, problem solving and developing solutions. 
+We may consider some from home office or Sole trader, micro business, small to SMEs [Case Studies](https://github.com/DavitTec/fileme/wiki/Case-Studies) to get us through from issues to analsys, problem solving and developing solutions. 
+
+Besides the systems and and IT archetecture, the main problems related to desiging information systems is the business contexts. A usiness context model should identify the all the actors (Government(s), people, organisations, systems etc) who play a significant role in the business process or in the specific business domain. However the complextity of the business context model relies on the initial size of the business activites, interests relevant and the scope of work, projects and interactinos with outside domains of the owner. In many cases a Business Plan is usually developed and is the driving factor for most if not all business related functions. We could assume in all cases a basic busines plan scenario for a generic startup, home office or single operator/entreprenure. 
+
+
+##Clasification of Business 
+
+### Business Contexts
+* Generic
+* Home office
+* New Startup entreprise (Startups)
+* Entreprenure, Sole trader, Micro (Micro)
+* Small medium and large entreprises (SME)
+* Multisite and Multi company (Blue Chips)
+
+### Location Contexts
+* Localization
+*   Primary language settings
+* Character sets
+* Currency
+*   currency
+*   Tax codes & Legalities
+*   Legal context
+
+
 
 ## ToDo
 Discussions
