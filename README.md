@@ -1,5 +1,13 @@
 # fileme
-
+<a href="https://davit.ie/"><img border="0" alt="DAVIT" src="https://raw.githubusercontent.com/DavitTec/dotfiles/master/img/DAVIT2.png" height="20"></a>
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/davittec/fileme/CI?style=plastic)
+![version](https://img.shields.io/badge/version-0.0.1-red?style=plastic) 
+![Debian package](https://img.shields.io/debian/v/bash/unstable?color=red&label=bash&style=plastic)
+<a href="https://twitter.com/intent/follow?screen_name=_davit">
+        <img src="https://img.shields.io/twitter/follow/_davit?style=social&logo=twitter"
+            alt="follow on Twitter"></a>
+            
+            
 Welcome to the  ![DAVit](https://avatars.githubusercontent.com/u/8759293?s=20&u=80214f09c8a6f5a219c40a62af483e694cb6fed8&v=4)DavitTec fileme repository.
 
 Please read [WiKi](https://github.com/DavitTec/fileme/wiki) for background information. 
