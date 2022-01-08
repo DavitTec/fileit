@@ -17,17 +17,17 @@ There is nothing much here yet as useful Tools, except mini shell scripts to cre
 
 The big question is to decide on a base operating system, Linux, MacOS or Windows. The initial focus on the file system structure may be Linux.
 
-We may consider some from home office or Sole trader, micro business, small to SMEs [Case Studies](https://github.com/DavitTec/fileme/wiki/Case-Studies) to get us through from issues to analsys, problem solving and developing solutions.
+We may consider some from home office or Sole trader, micro business, small to SMEs [Case Studies](https://github.com/DavitTec/fileme/wiki/Case-Studies) to get us through from issues to analyses, problem solving and developing solutions.
 
-Besides the systems and IT architecture, the main problem related to designing an information or record system is the business context. A business context model should identify all the actors (Government(s), people, organizations, systems, etc) who play a significant role in the business process or in the specific activity domain. The complexity of the business context model relies on the initial size of the functional activities, interests relevant, and the scope of work, projects, and interactions with outside domains of the owner. In many cases, a Business Plan is usually developed and is the driving factor for most, if not all, business-related functions. We could assume in all cases a business planning scenario from a generic startup, home office, or single operator/entrepreneur.
+Besides the systems and IT architecture, the main problem related to designing an information or record system is the business context. A business context model should identify all the actors (Government(s), people, organizations, systems, etc.) who play a significant role in the business process or in the specific activity domain. The complexity of the business context model relies on the initial size of the functional activities, interests relevant, and the scope of work, projects, and interactions with outside domains of the owner. In many cases, a Business Plan is usually developed and is the driving factor for most, if not all, business-related functions. We could assume in all cases a business planning scenario from a generic start-up, home office, or single operator/entrepreneur.
 
 
 ## Scripts & Spreadsheet
 
-_Verions 1_
+_Version 0.0.11_
 The following are sample bash scripts to create a directory structure.
-These can be ammended or customised to your desire and create a new script
-with the hlpe of the included spreadsheet (fileme.ods).
+These can be amended or customised to your desire and create a new script
+with the help of the included spreadsheet (fileme.ods).
 
 By changing the contents if the columns under the LEVEL1-6 will change the first
 column that can be used to cut and paste into you own new bash script.
@@ -47,9 +47,9 @@ Spreadsheet download :
 ### Business Contexts
 * Generic
 * Home office
-* New Startup entreprise (Startups)
-* Entreprenure, Sole trader, Micro (Micro)
-* Small medium and large entreprises (SME)
+* New Start-up enterprise (Startups)
+* Entrepreneur, Sole trader, Micro (Micro)
+* Small medium and large enterprise (SME)
 * Multisite and Multi company (Blue Chips)
 
 ### Location Contexts
@@ -65,10 +65,10 @@ Spreadsheet download :
 Discussions
 
 * File Concept; overview, concepts, origin, rules, processes, types, metadata...
-* Operating Systems; OS levels, application management,data blocks,fragmentation,mandatory or advisory file sytems,...
-* Orginal directory implementation; structured, accidental, ad-hoc, rule based, file-systems
-* File system operation; backgound, case studies,  
-* File system structure; scheme, hard or soft, central, decentral, layered, mixed, cloud...
+* Operating Systems; OS levels, application management,data blocks,fragmentation,mandatory or advisory file systems,...
+* Original directory implementation; structured, accidental, ad-hoc, rule based, file-systems
+* File system operation; background, case studies,  
+* File system structure; scheme, hard or soft, central, decentralise, layered, mixed, cloud...
 * Free Space Management; free space management methods, media, rotations, limitation.
 * Directory strategies; Structured, Protocols, services, security, trusts, maps (tree/graph)...
 * Allocation strategies; devices, file storage structure; locks, contiguous, linked and indexed allocation.
@@ -77,3 +77,26 @@ Discussions
 ## Contributing
 
 If you are interested in joining our efforts, please read the [contribute.md](contribute.md).
+
+
+## LICENCE ##
+  Copyright (C) 2022 Davit
+
+  fileme is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+## AUTHOR ##
+Comments are welcome.
+
+	- Davit <davitech@davit.ie>
