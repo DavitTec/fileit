@@ -1,4 +1,4 @@
-# fileme
+# FileIT
 <a href="https://davit.ie/"><img border="0" alt="DAVIT" src="https://raw.githubusercontent.com/DavitTec/dotfiles/master/img/DAVIT2.png" height="20"></a>
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/davittec/fileme/CI?style=plastic)
 ![version](https://img.shields.io/badge/version-0.0.11-red?style=plastic)
@@ -8,9 +8,9 @@
             alt="follow on Twitter"></a>
 
 
-Welcome to the  ![DAVit](https://avatars.githubusercontent.com/u/8759293?s=20&u=80214f09c8a6f5a219c40a62af483e694cb6fed8&v=4)DavitTec fileme repository.
+Welcome to the  ![DAVit](https://avatars.githubusercontent.com/u/8759293?s=20&u=80214f09c8a6f5a219c40a62af483e694cb6fed8&v=4)DavitTec FileIT repository.
 
-Please read [WiKi](https://github.com/DavitTec/fileme/wiki) for background information.
+Please read [WiKi](https://github.com/DavitTec/FileIT/wiki) for background information.
 
 
 There is nothing much here yet as useful Tools, except mini shell scripts to create some directories with some symbolic links. There is also spreadsheet tool to help customise your own scripts.
@@ -27,7 +27,7 @@ Besides the systems and IT architecture, the main problem related to designing 
 _Version 0.0.11_
 The following are sample bash scripts to create a directory structure.
 These can be amended or customised to your desire and create a new script
-with the help of the included spreadsheet (fileme.ods).
+with the help of the included spreadsheet (FileIT.ods).
 
 By changing the contents if the columns under the LEVEL1-6 will change the first
 column that can be used to cut and paste into you own new bash script.
@@ -36,7 +36,7 @@ column that can be used to cut and paste into you own new bash script.
 
 
 Spreadsheet download :
-[fileme.ods](https://github.com/DavitTec/fileme/raw/master/src/fileme.ods)
+[FileIT.ods](https://github.com/DavitTec/FileIT/raw/master/src/FileIT.ods)
 
 * **create-folders.sh** a generic first attempt of the typical directory structure.
 * **smallbiz.sh** a directory structure for a typical small business.
@@ -82,7 +82,7 @@ If you are interested in joining our efforts, please read the [contribute.md](co
 ## LICENCE ##
   Copyright (C) 2022 Davit
 
-  fileme is free software; you can redistribute it and/or modify
+  FileIT is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation; either version 2 of the License, or
   (at your option) any later version.
