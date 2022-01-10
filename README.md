@@ -88,7 +88,7 @@ If you are interested in joining our efforts, please read the [contribute.md](co
 
 
 ## Make the world Greener
-Contribute towards better planet [**Plant a tree with your label**](https://osici.com/) and we send you a unique QR code an annual Christmas card made from one of its leaves.
+Contribute towards better planet [**Plant a tree with your label**](https://osici.com/) and we send you a unique annual Christmas card with QR code made from one of its leaves.
 
 
 ## Support our Work
