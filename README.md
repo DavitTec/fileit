@@ -10,7 +10,8 @@
 
 Welcome to the  ![DAVit](https://avatars.githubusercontent.com/u/8759293?s=20&u=80214f09c8a6f5a219c40a62af483e694cb6fed8&v=4)DavitTec FileIT repository.
 
-Please read [WiKi](https://github.com/DavitTec/FileIT/wiki) for background information.
+
+Please read [WiKi](https://github.com/DavitTec/fileme/wiki) for background information.
 
 
 There is nothing much here yet as useful Tools, except mini shell scripts to create some directories with some symbolic links. There is also spreadsheet tool to help customise your own scripts.
@@ -24,7 +25,7 @@ Besides the systems and IT architecture, the main problem related to designing 
 
 ## Scripts & Spreadsheet
 
-_Version 0.0.11_
+_Version 0.0.12_
 The following are sample bash scripts to create a directory structure.
 These can be amended or customised to your desire and create a new script
 with the help of the included spreadsheet (FileIT.ods).
@@ -76,8 +77,36 @@ Discussions
 
 ## Contributing
 
+
 If you are interested in joining our efforts, please read the [contribute.md](contribute.md).
 
+
+## Follow me at
+<a href="https://github.com/DavitTec/"><img alt="Github @dr5hn" src="https://img.shields.io/static/v1?logo=github&message=Github&color=black&style=flat-square&label=" /></a> <a href="https://twitter.com/_davit/"><img alt="Twitter @_davit" src="https://img.shields.io/static/v1?logo=twitter&message=Twitter&color=black&style=flat-square&label=" /></a> <a href="https://www.linkedin.com/company/davit/about/"><img alt="LinkedIn @Davit" src="https://img.shields.io/static/v1?logo=linkedin&message=LinkedIn&color=black&style=flat-square&label=&link=https://twitter.com/_davit" /></a>
+
+
+## Make the world Greener
+Contribute towards better planet [**Plant a tree with your label**](https://osici.com/) and we send you a unique QR code an annual Christmas card made from one of its leaves.
+
+
+## Support our Work
+<p>
+  <a href="https://www.paypal.me/DavitTec" target="_blank">
+      <img height="50" alt="Support with Paypal" src="./src/img/paypal-donate.png"/>
+  </a>
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/DavitTec)
+
+</p>
+
+[![become-a-backer](https://opencollective.com/fileme/backers.svg?width=890)](https://opencollective.com/fileme#backers)
+
+
+## Suggestions / Feedbacks
+```
+Suggestions & Feedbacks are very welcome
+me[at]davit[dot]ie
+```
 
 ## LICENCE ##
   Copyright (C) 2022 Davit
