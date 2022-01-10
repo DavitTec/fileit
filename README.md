@@ -1,24 +1,26 @@
-# FileIT
+# <a href="https://github.com/DavitTec/fileit"><img border="0" alt="FileIT" src="lib/img/FileIT.png" height="50"></a>
+
+
 <a href="https://davit.ie/"><img border="0" alt="DAVIT" src="https://raw.githubusercontent.com/DavitTec/dotfiles/master/img/DAVIT2.png" height="20"></a>
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/davittec/fileme/CI?style=plastic)
-![version](https://img.shields.io/badge/version-0.0.11-red?style=plastic)
+![version](https://img.shields.io/badge/version-0.0.12-red?style=plastic)
 ![Debian package](https://img.shields.io/debian/v/bash/unstable?color=red&label=bash&style=plastic)
 <a href="https://twitter.com/intent/follow?screen_name=_davit">
         <img src="https://img.shields.io/twitter/follow/_davit?style=social&logo=twitter"
             alt="follow on Twitter"></a>
 
 
-Welcome to the  ![DAVit](https://avatars.githubusercontent.com/u/8759293?s=20&u=80214f09c8a6f5a219c40a62af483e694cb6fed8&v=4)DavitTec FileIT repository.
+Welcome to the  ![DAVit](https://avatars.githubusercontent.com/u/8759293?s=20&u=80214f09c8a6f5a219c40a62af483e694cb6fed8&v=4)DavitTec **FileIT** repository.
 
 
-Please read [WiKi](https://github.com/DavitTec/fileme/wiki) for background information.
+Please read [WiKi](https://github.com/DavitTec/fileit/wiki) for background information.
 
 
 There is nothing much here yet as useful Tools, except mini shell scripts to create some directories with some symbolic links. There is also spreadsheet tool to help customise your own scripts.
 
 The big question is to decide on a base operating system, Linux, MacOS or Windows. The initial focus on the file system structure may be Linux.
 
-We may consider some from home office or Sole trader, micro business, small to SMEs [Case Studies](https://github.com/DavitTec/fileme/wiki/Case-Studies) to get us through from issues to analyses, problem solving and developing solutions.
+We may consider some from home office or Sole trader, micro business, small to SMEs [Case Studies](https://github.com/DavitTec/fileit/wiki/Case-Studies) to get us through from issues to analyses, problem solving and developing solutions.
 
 Besides the systems and IT architecture, the main problem related to designing an information or record system is the business context. A business context model should identify all the actors (Government(s), people, organizations, systems, etc.) who play a significant role in the business process or in the specific activity domain. The complexity of the business context model relies on the initial size of the functional activities, interests relevant, and the scope of work, projects, and interactions with outside domains of the owner. In many cases, a Business Plan is usually developed and is the driving factor for most, if not all, business-related functions. We could assume in all cases a business planning scenario from a generic start-up, home office, or single operator/entrepreneur.
 
@@ -82,7 +84,7 @@ If you are interested in joining our efforts, please read the [contribute.md](co
 
 
 ## Follow me at
-<a href="https://github.com/DavitTec/"><img alt="Github @dr5hn" src="https://img.shields.io/static/v1?logo=github&message=Github&color=black&style=flat-square&label=" /></a> <a href="https://twitter.com/_davit/"><img alt="Twitter @_davit" src="https://img.shields.io/static/v1?logo=twitter&message=Twitter&color=black&style=flat-square&label=" /></a> <a href="https://www.linkedin.com/company/davit/about/"><img alt="LinkedIn @Davit" src="https://img.shields.io/static/v1?logo=linkedin&message=LinkedIn&color=black&style=flat-square&label=&link=https://twitter.com/_davit" /></a>
+<a href="https://github.com/DavitTec/"><img alt="Github @DAvitTec" src="https://img.shields.io/static/v1?logo=github&message=Github&color=black&style=flat-square&label=" /></a> <a href="https://twitter.com/_davit/"><img alt="Twitter @_davit" src="https://img.shields.io/static/v1?logo=twitter&message=Twitter&color=black&style=flat-square&label=" /></a> <a href="https://www.linkedin.com/company/davit/about/"><img alt="LinkedIn @Davit" src="https://img.shields.io/static/v1?logo=linkedin&message=LinkedIn&color=black&style=flat-square&label=&link=https://twitter.com/_davit" /></a>
 
 
 ## Make the world Greener
@@ -92,15 +94,11 @@ Contribute towards better planet [**Plant a tree with your label**](https://osic
 ## Support our Work
 <p>
   <a href="https://www.paypal.me/DavitTec" target="_blank">
-      <img height="50" alt="Support with Paypal" src="./src/img/paypal-donate.png"/>
-  </a>
+      <img height="50" alt="Support with Paypal" src="lib/img/paypal-donate.png"/></a>
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/DavitTec)
-
+[![become-a-backer](https://opencollective.com/fileit/backers.svg?width=890)](https://opencollective.com/fileit#backers)
 </p>
-
-[![become-a-backer](https://opencollective.com/fileme/backers.svg?width=890)](https://opencollective.com/fileme#backers)
-
 
 ## Suggestions / Feedbacks
 ```
