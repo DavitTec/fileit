@@ -39,7 +39,7 @@ column that can be used to cut and paste into you own new bash script.
 
 
 Spreadsheet download :
-[FileIT.ods](https://github.com/DavitTec/FileIT/raw/master/src/FileIT.ods)
+[fileIT.ods](https://github.com/DavitTec/FileIT/raw/master/src/fileIT.ods)
 
 * **create-folders.sh** a generic first attempt of the typical directory structure.
 * **smallbiz.sh** a directory structure for a typical small business.
