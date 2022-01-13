@@ -1,6 +1,23 @@
+/*
+ Source Server         : fileitdb
+ Source Server Type    : PostgreSQL
+ Source Server Version : 100014
+ Source Host           : localhost:5432
+ Source Catalog        : fileitdb
+ Source Schema         : fileit
+ Target Server Type    : PostgreSQL
+ Target Server Version : 100014
+ File Encoding         : 65001
+ Date: 06/01/2022
+*/
+-- ----------------------------
+-- Table structure for tbl_storage_tmp
+-- ----------------------------
+DROP TABLE IF EXISTS tbl_storage_tmp;
+
+CREATE TABLE tbl_storage_tmp
 (
-    rec_id          integer default nextval('tbl_storage_rec_id_seq'::regclass) not null
-        constraint tbl_storage_pkey
+    rec_id  serial not null
             primary key,
     drive_id        varchar,
     manufacturer    varchar,
@@ -16,3 +33,5 @@
     username        varchar,
     "Firmware"      varchar
 );
+
+
