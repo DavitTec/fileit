@@ -1,0 +1,55 @@
+-rw-r--r-- 1    0    0       59 Aug  8 06:21 ./root/.aptitude/config
+-rw-r--r-- 1    0    0   455895 Aug  7 00:01 ./root/.kbd/.keymap_sv
+-rw------- 1    0    0     8192 Aug  6 07:34 ./quota.group
+lrwxrwxrwx 1    0  121       23 Jul 10  2019 ./root/.config/pulse/ca194a4540df35cca2c5a5be5887e2a4-runtime -> /tmp/pulse-PKdhtXMmr18n
+-rw------- 1    0    0     7217 Jul 10  2019 ./root/.bash_history
+-rw------- 1    0    0        2 Jul 10  2019 ./root/.cache/dconf/user
+-rw-r--r-- 1    0    0     2784 Jul  6  2019 ./root/.config/dconf/user
+-rw------- 1    0    0      232 Jul  6  2019 ./root/.cache/thumbnails/fail/gnome-thumbnail-factory/bbb1438d1b0648f778b65f54d0ef9448.png
+-rw-r--r-- 1    0    0      465 Jul  6  2019 ./root/.dbus/session-bus/ca194a4540df35cca2c5a5be5887e2a4-0
+-rwxr-xr-x 1    0    0    94160 Apr  9  2019 ./sbin/wpa_cli
+-rwxr-xr-x 1    0    0  1778112 Apr  9  2019 ./sbin/wpa_supplicant
+lrwxrwxrwx 1    0    0       12 Apr  3  2019 ./sbin/udevadm -> /bin/udevadm
+lrwxrwxrwx 1    0    0       26 Apr  3  2019 ./sbin/udevd -> /lib/systemd/systemd-udevd
+-rwxr-xr-x 1    0    0   134380 Mar 27  2019 ./lib32/ld-2.19.so
+-rw-r--r-- 1    0    0    14032 Mar 27  2019 ./lib32/libanl-2.19.so
+-rwxr-xr-x 1    0    0    71792 Dec 18  2013 ./sbin/ntfsresize
+-rwxr-xr-x 1    0    0    47208 Dec 18  2013 ./sbin/ntfsundelete
+-rwxr-xr-x 1    0    0   947328 Dec 13  2013 ./sbin/lvm
+-rwxr-xr-x 1    0    0    71592 Dec 13  2013 ./sbin/dmsetup
+-rwxr-xr-x 1    0    0    14083 Dec 13  2013 ./sbin/fsadm
+-rwxr-xr-x 1    0    0     6691 Dec 13  2013 ./sbin/lvmconf
+-rwxr-xr-x 1    0    0     7301 Dec 13  2013 ./sbin/lvmdump
+-rwxr-xr-x 1    0    0    10399 Dec 13  2013 ./sbin/vgimportclone
+-rwxr-xr-x 1    0    0    10600 Feb 18  2013 ./sbin/setvtrgb
+-rwxr-xr-x 1    0    0     5576 Feb 13  2013 ./sbin/alsa
+-rwxr-xr-x 1    0    0   106824 Dec 27  2012 ./sbin/quotacheck
+-rwxr-xr-x 1    0    0    77600 Dec 27  2012 ./sbin/quotaon
+lrwxrwxrwx 1    0    0        7 Dec 27  2012 ./sbin/quotaoff -> quotaon
+-rwxr-xr-x 1    0    0     6248 Oct  3  2012 ./sbin/acpi_available
+-rwxr-xr-x 1    0    0     6272 Oct  3  2012 ./sbin/apm_available
+-rwxr-xr-x 1    0    0    14720 Oct  1  2012 ./sbin/crda
+-rwxr-xr-x 1    0    0    10488 Oct  1  2012 ./sbin/regdbdump
+-rwxr-xr-x 1    0    0    18800 Jun 29  2012 ./sbin/pccardctl
+-rwxr-xr-x 1    0    0   107216 May 24  2012 ./sbin/iw
+-rwxr-xr-x 1    0    0    27008 May  3  2012 ./sbin/iwconfig
+-rwxr-xr-x 1    0    0    14720 May  3  2012 ./sbin/iwevent
+-rwxr-xr-x 1    0    0    14528 May  3  2012 ./sbin/iwgetid
+-rwxr-xr-x 1    0    0    35352 May  3  2012 ./sbin/iwlist
+-rwxr-xr-x 1    0    0    14608 May  3  2012 ./sbin/iwpriv
+-rwxr-xr-x 1    0    0    14568 May  3  2012 ./sbin/iwspy
+-rwxr-xr-x 1    0    0     2251 Dec  2  2009 ./sbin/on_ac_power
+-rw-r--r-- 1 1001 1001        464 Jul 10  2019 ./home/joebloggs/.dbus/session-bus/ca194a4540df35cca2c5a5be5887e2a4-0
+-rw------- 1 1001 1001         29 Jul 10  2019 ./home/joebloggs/.dmrc
+-rwxrwxrwx 1 1001 1001     98 Sep  9  2017 ./home/joebloggs/Documents/More Documents/Favorites/Imported NetMarks/Imported favorites/Favorites 1/Digital Library/Organisational Chart.url
+-rwxrwxrwx 1 1001 1001     80 Sep  9  2017 ./home/joebloggs/Documents/More Documents/Favorites/Imported NetMarks/Imported favorites/Favorites 2/Digital Library/PhilÃ¢â¬â¢s JISC CETIS blogÃÂ» Blog Archive ÃÂ» LMAP Update.url
+-rwxrwxrwx 1 1001 1001    106 Sep  9  2017 ./home/joebloggs/Documents/More Documents/Favorites/Imported NetMarks/Imported favorites/Favorites 3/Digital Library/TED - Clipping list.url
+-rwxrwxrwx 1 1001 1001    180 Sep  9  2017 ./home/joebloggs/Documents/More Documents/Favorites/Imported NetMarks/Imported favorites/Favorites 1/Digital Library/Yahoo! Mail - joebloggs@yahoo.com.url
+-rwxrwxrwx 1 1001 1001     57 Sep  9  2017 ./home/joebloggs/Documents/More Documents/Favorites/Imported NetMarks/Imported favorites/Favorites 1/Digital Archiving and Validation/National Archives.url
+-rwxrwxrwx 1 1001 1001    119 Sep  9  2017 ./home/joebloggs/Documents/More Documents/Favorites/Imported NetMarks/Imported favorites/Favorites 1/Digital Library/CORDIS &gt; FP7 &gt; People _ Call for Proposals.url
+-rwxrwxrwx 1 1001 1001    107 Sep  9  2017 ./home/joebloggs/Documents/More Documents/Favorites/Imported NetMarks/Imported favorites/Favorites 1/Digital Library/Digital Libraries - HOME - Europa - DG Information Society &amp; Media.url
+-rwxrwxrwx 1 1001 1001     89 Sep  9  2017 ./home/joebloggs/Documents/More Documents/Favorites/Imported NetMarks/Imported favorites/Favorites 1/Digital Library/EMM.url
+-rwxrwxrwx 1 1001 1001     63 Sep  9  2017 ./home/joebloggs/Documents/More Documents/Favorites/Imported NetMarks/Imported favorites/Favorites 1/Chinese/Ã¥âÂ¿Ã§Â«Â¥flash Ã¥âÂ¿Ã§Â«Â¥Ã¥ÂÂ¬ÃŠâ¢âŠÃ€Âºâ¹ ÃŠËÂÃšÂ¯Â­ÃŠâ¢âŠÃ€Âºâ¹-ÃŠÂâ¬Ã©ÂžÂ¡Ã§Â»â¢Ã§ÅÂŽÃ§Åâ¹.url
+-rwxrwxr-x 1 33 33     4427 Dec 23  2009 ./var/www/wiki/wiki.mynet.com/lib/plugins/multilingual/syntax.php
+-rw-r----- 1    0    7      210 Jul 26  2017 ./var/cache/cups/job.cache
+-rw-r--r-- 1    0    0      227 Jul 26  2017 ./var/cache/samba/browse.dat
