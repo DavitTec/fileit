@@ -4,6 +4,12 @@
 ## REFERENCES
 #
 #
+## TODO
+#  FIX  Filenames and Paths not to be hard coded
+#  NEED to add a options, Catch all and Usage
+#  NEED a switch to default to TEST MODE
+#        Live mode needs more work
+#  NEED to add a LOG routine
 ###################################################
 # Bash Shell script to execute psql connect command
 ###################################################
