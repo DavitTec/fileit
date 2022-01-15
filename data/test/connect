@@ -2,6 +2,8 @@
 
 ###################################################
 ## REFERENCES
+# https://stackoverflow.com/questions/18223665/postgresql-query-from-bash-script-as-database-user-postgres
+# http://www.manniwood.com/postgresql_and_bash_stuff/index.html
 #
 #
 ## TODO
@@ -11,9 +13,9 @@
 #        Live mode needs more work
 #  NEED to add a LOG routine
 ###################################################
-# Bash Shell script to execute psql connect command
+# First Bash Shell script to execute psql command
 ###################################################
-set -e
+set -e  #Exit imediatly (not usable when in trap or testing mode)
 set -u
 
 version=0.04
@@ -27,13 +29,18 @@ d=$(date +%Y-%m-%d)
 t="$(date +"%T")"
 timestamp="$d $t"
 
+SOURCE="${BASH_SOURCE[0]}"
+echo "SOURCE is '$SOURCE  -'  Version $version"
+
 
 #Process Directorylist
 echo "Creating input file"
 
-./fix_directorylist.sh
+# Run directory listing
+./directorylisting.sh
 
-echo " ..input file created"
+
+
 #exit 0
 
 #Execute few psql commands:
@@ -58,6 +65,7 @@ export PGPASSWORD=${PGPASSWORD-"$PASS"}
 
 
 #Note: you can also add -h hostname -U username in the below commands.
+#echo ""psql -h $host -d $dbname -U $user -c "CREATE TABLE public.tbl_students(rno integer, name character varying)"""
 
 echo "psql -c createdb $dbname"
 echo "CONNECTING to $PGUSER at $PGHOST:$PGPORT"

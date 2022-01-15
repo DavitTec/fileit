@@ -17,20 +17,21 @@
 #       NEED Catch errors and Quit options
 #       NEED to present OPTIONS and USAGE 
 
-DIR="$1"
 
+# https://www.cyberciti.biz/tips/handling-filenames-with-spaces-in-bash.html
+# https://unix.stackexchange.com/questions/236029/bash-how-do-you-return-file-extensions/236036
+
+DIR="$1"
+#  MODE option for futuer implementation
+MODE=1  # "0 - Normal, 1 - Test, 2 - Debug"
 # failsafe - fall back to current directory
 [ "$DIR" == "" ] && DIR="."
-
 version=0.04
-
 # save and change IFS
 OLDIFS=$IFS
 IFS=$'\n'
-
 # # read all file name into an array
 # fileArray=($(find $DIR -type f))
-
 # restore it
 IFS=$OLDIFS
 # get length of an array
@@ -53,10 +54,9 @@ IFS=$OLDIFS
 # done
 # exit
 
-
 #  GETTING SOURCE  DIRECTORY AND PATH
 SOURCE="${BASH_SOURCE[0]}"
-echo "SOURCE is '$SOURCE  -'  Version $version"
+echo "Running '$SOURCE  -'  Version $version"
 RDIR="$( dirname "$SOURCE" )"
 DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
 if [ "$DIR" != "$RDIR" ]; then
@@ -70,14 +70,19 @@ start=$(date +%s.%N)
 
 # File directory list
 
-# TODO FIX required here
-## SAMPLE data
-infile="testdir"
+# Depends on mode LIVE, TEST or DEBUG
+if [ $mode ]; then
+    infile="testdir"
+    echo "Running in LIVE MODE"
+else
+    infile="testdocwithbreaks.txt"
+    echo "Running in TEST MODE"
+fi
 
 outfile="$DIR/out/$infile"
 infile="$DIR/in/$infile"
 
-echo "TARGET is '$infile'"
+echo "TARGET is $infile"
 
 #Getting age of input file
 BIRTHDATE=$(stat -c %w $infile)
@@ -86,19 +91,65 @@ LASTMODDATE=${LASTMODDATE%% *}
 VALUES=(${LASTMODDATE//-/ })
 LASTMODYEAR=${VALUES[0]}
 
-
 #echo "$LASTMODYEAR $LASTMODDATE ($BIRTHDATE)"
-
-# Get no of lines in files
+# Get numbers of lines in file
 lnes=$(gawk 'END { print NR }' $infile)
 
-# read all file name into an array
-#fileArray=($(find $DIR -type f))
-
+## read all file name into an array
+# fileArray=($(find $DIR -type f))
 # FIND (\ \.\/.*\b)
 # REPLACE "\1"
-#echo "create new file TOP" > $outfile
-sed -e 's# \.\(\/.*\)#\t"root\1#g' $infile > $outfile.tmp
+# echo "create new file TOP" > $outfile
+
+
+# This was supposed to alter file with adding "root" but now necessary
+# condition of file but be in a format presneted by the
+# NOTE...THIS WILL PRINT NON printable characters, Line return etc,
+##    You must clean the OUTPUT file to make one line per file.
+##    DO THIS FIRST to remove
+##    to rename all files containing line feed in current folder and
+##    sub-folder, by combining find command with rename -
+##    Check to see if errors and or remaing bad names files#
+##    Here, find command locates all files containing line feed and
+##    rename command replaces every line feed in the name with a space.
+##    The same can be done for any other such problematic characters such as
+#     carriage return (\r).
+# NOTE: THIS IS NOT removing bad characters
+# NOTE: Running the following command assumes root privileges and from "/mnt"
+#       or change the Source to the target folder.
+#       Drives are usually mounted in the "/mnt" folder
+#
+#  - This will rename some bad file names recursively - TEST first
+#  find -name $'*\n*' -exec rename  $'s|\n| |g' '{}' \;
+#  - This will collect file list (inc links) into a new input file in table
+#    format. But this will include files with hidden or bad file name characters
+#    and possible extra line feeds.
+#
+# find . ! -type d -exec ls -lnt {} + > in/directorylist.txt
+#
+#
+#### Example Disk information
+##       It would be helpful to collect Drive infor first and add to Database
+####  DISK INFORMATION
+##     MAKE:                SAMSUNG
+##     MODEL:               ST1000DM005
+##     SIZE:                1000GB
+##     SERIAL:              NO:S246J9EC424741
+##     PARTITION FORMAT:    Ext4 (version 1.0)
+##     LAST CHECKED:        27/01/2020
+##     STATUS:
+##     FREESPACE:           280
+####  Creating Directory listings
+
+#  OLD method
+# sed -e 's# \.\(\/.*\)#\t"root\1#g' $infile > $outfile.tmp
+
+# CONFIRM input files
+
+echo "file for processing is $infile ($LASTMODDATE) and it has $lnes lines to process"
+exit 0
+
+
 
 #exclude lines beginginwith "l" which are filelinks
 grep -v '^l' $outfile.tmp > $outfile
