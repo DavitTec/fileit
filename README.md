@@ -12,6 +12,8 @@
 
 Welcome to the  ![DAVit](https://avatars.githubusercontent.com/u/8759293?s=20&u=80214f09c8a6f5a219c40a62af483e694cb6fed8&v=4)DavitTec **FileIT** repository.
 
+**:wrench: WARNING Work in progress, there needs a few changes and fixes in teh TEST Folder.
+
 
 Please read [WiKi](https://github.com/DavitTec/fileit/wiki) for background information.
 
