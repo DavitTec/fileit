@@ -109,6 +109,10 @@ me[at]davit[dot]ie
 ```
 
 ## LICENCE ##
+
+The assets in *img||logo/ are trademarks of their respective companies and are under their terms and license.
+
+
   Copyright (C) 2022 Davit
 
   FileIT is free software; you can redistribute it and/or modify
