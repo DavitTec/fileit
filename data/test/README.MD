@@ -39,11 +39,12 @@
 ## Design Goals
 
 
+____
 
 ## TODO
 | VERSION        | ITEM                               | Description                                    |
 | --------------:|:----------------------------------:|:-----------------------------------------------|
-|            0.5 | **directorylist.sh**               | did a few changes to te structure              |
+|            0.5 | **directorylist.sh**               | did a few changes to the structure             |
 |            0.4 |                                    |                                                |
 |            0.3 |                                    |                                                |
 
