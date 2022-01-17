@@ -36,3 +36,26 @@
 
 ## Design Goals
 
+
+
+## TODO
+| VERSION        | ITEM                               | Description                                    |
+| --------------:|:----------------------------------:|:-----------------------------------------------|
+|            0.5 | **directorylist.sh**               | did a few changes to te structure              |
+|            0.4 |                                    |                                                |
+|            0.3 |                                    |                                                |
+
+TODO  file array loop DISABLED
+
+* [ ] replace any hard coding of input filenames and paths
+
+* [ ] NEED to establish a more efficient populate database
+
+* [ ] NEED to include Time estimate and a Progress bar
+     this process may that >hours depending on input file size
+
+* [ ] NEED Catch errors and Quit options
+
+* [ ] NEED to present OPTIONS and USAGE
+
+
