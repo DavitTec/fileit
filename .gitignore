@@ -1,5 +1,26 @@
-# exclude everything for directories
+# exclude everything for directories and specials
+
+drafts/** 
+
+# Why archive?
 archives/**
-testarea/**
+
+# creator files
 mydocs/**
+.todo
+.idea
+
+# managed seperatly
 wiki/**   
+
+test/tmp
+testarea/**
+*~
+*#
+.#*
+\#*#
+*.un~
+*.tmp
+*.bk
+*.bkup
+
