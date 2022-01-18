@@ -50,7 +50,8 @@ ____
 
 TODO  file array loop DISABLED
 
-* [ ] NEED OPTIMIZING FOR SPEED when using sed
+* [ ] NEED OPTIMIZING FOR SPEED when using sed. Execution speed needs to be increased (due to large input files or slow processors or hard disks).
+   -  This could be achieved using "find" expression is specified before giving the "s/.../.../".
 
 * [ ] replace any hard coding of input filenames and paths
 
