@@ -1,5 +1,4 @@
 /*
-
  Source Server         : fileitdb
  Source Server Type    : PostgreSQL
  Source Server Version : 100001
@@ -14,17 +13,11 @@
  Date: 06/01/2022
 
 This sql script assumes a Temporary Database Table called
-
 tbl_storage_tmp
 
-This must be created first 
-
+This must be created first
 */
-
-
 -- Database: fileitdb;
-
-
 
 /* Drop tables
 */
