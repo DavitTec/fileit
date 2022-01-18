@@ -50,6 +50,8 @@ ____
 
 TODO  file array loop DISABLED
 
+* [ ] NEED OPTIMIZING FOR SPEED when using sed
+
 * [ ] replace any hard coding of input filenames and paths
 
 * [ ] NEED to establish a more efficient populate database
