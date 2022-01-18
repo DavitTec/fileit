@@ -1,6 +1,6 @@
 [Back to resource list](../README.md#Resources)
 
-# postgresql_database
+# fileit_database
 
 This resource manages PostgreSQL Fileit databases.
 
