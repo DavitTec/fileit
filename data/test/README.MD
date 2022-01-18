@@ -1,7 +1,8 @@
 # README
-
-[![Build Status](https://github.com/DavitTec/fileme/img/fileit.svg?branch=master)](https://davit.ie)
+[![Maintenance](https://img.shields.io/badge/Build&nbsp;Status-in&nbsp;progress-red?style=plastic)](https://github.com/DavitTec/fileit/pulse)
 ![version](https://img.shields.io/badge/version-0.5.1-red?style=plastic)
+
+
 **:wrench: WARNING** Work in progress, there needs a few changes and fixes in the TEST Folder.
 
 
