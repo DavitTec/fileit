@@ -1,0 +1,5 @@
+# exclude everything for directories
+archives/**
+testarea/**
+mydocs/**
+wiki/**   
