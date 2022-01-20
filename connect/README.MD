@@ -2,6 +2,11 @@
 
 Join LibreOffice Calc with POSTGRESQL
 
+## Script
+
+
+
+
 
 ## Install LibreOffice Base
 
