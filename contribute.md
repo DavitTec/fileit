@@ -13,6 +13,10 @@ If you want to help out and contribute to this fileme Project, please follow thi
 or email me at me@davit.ie
 
 
+We try to adopt good practice guides
+ - [Bash](/guides/bash) 
+  -
+
 
 ------
 
