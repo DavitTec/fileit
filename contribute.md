@@ -14,7 +14,7 @@ or email me at me@davit.ie
 
 
 We try to adopt good practice guides
- - [Bash](/guides/bash) 
+ - [Bash](/guides/bash.md) 
   -
 
 
