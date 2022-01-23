@@ -28,3 +28,27 @@ In addition to [shell](/shell/) best practices:
 1. Use `#!/usr/bin/env bash`, as it is more portable than `#!/bin/bash`.
 1. Use `${BASH_SOURCE[0]}` if you refer to current file, even if it is sourced by a parent script. In other cases, use `${0}`.
 1. Use `:-` if you want to test variables that could be undeclared. For instance, with `if [ "${NAME:-}" = "Kevin" ]`, `$NAME` will evaluate to `Kevin` if the variable is empty. The variable itself will remain unchanged. The syntax to assign a default value is `${NAME:=Kevin}`.
+
+### Function packaging
+
+It is nice to have a Bash package that can not only be used in the terminal, but also invoked as a command line function. In order to achieve this, the exporting of your functionality *should* follow this pattern:
+
+```bash
+if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
+  export -f my_script
+else
+  my_script "${@}"
+  exit $?
+fi
+```
+This allows a user to `source` your script or invoke it as a script.
+
+```bash
+# Running as a script
+$ ./my_script.sh some args --blah
+# Sourcing the script
+$ source my_script.sh
+$ my_script some more args --blah
+```
+
+
