@@ -7,8 +7,8 @@ archives/**
 
 # creator files
 mydocs/**
-.todo
-.idea
+*.todo
+*.idea
 
 # managed seperatly
 wiki/**
@@ -24,4 +24,4 @@ testarea/**
 *.bk
 *.bkup
 
-#connect/**  
+#connect/**

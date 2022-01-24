@@ -1,5 +1,6 @@
 #! /usr/bin/env bash
-version=0.05.2
+version=0.05.8
+
 # HEADER fileit test Directory list file modification script
 # AUTHOR David Mullins (DAVit) @2022 Jan
 # to prepare file for data import
@@ -11,6 +12,7 @@ version=0.05.2
 # using for loop. This is useful for complex tasks:
 
 # TODO  
+#  [ ] file array loop DISABLED
 #  [ ]  Check standalone or CALLED by prog
 #  [ ]  check that calling prog version is not behind this version
 #  [ ]  File array loop DISABLED
@@ -23,7 +25,11 @@ version=0.05.2
 #  [ ]  NEED to offer simpler methods of splitting large input files
 #  [ ]  NEED to present OPTIONS and USAGE
 #  [ ]  NEED to SPLIT LARGE CSV
-#       ref https://betterprogramming.pub/how-to-split-a-large-excel-file-into-multiple-smaller-files-664f18f97900
+# https://www.cyberciti.biz/tips/handling-filenames-with-spaces-in-bash.html
+# https://unix.stackexchange.com/questions/236029/bash-how-do-you-return-file-extensions/236036
+
+
+#https://betterprogramming.pub/how-to-split-a-large-excel-file-into-multiple-smaller-files-664f18f97900
 
 #####################################################################
 # Default scale used by float functions.
@@ -48,23 +54,32 @@ function float_eval()
 
 
 ### ProgressBar
-SLEEP_DURATION=${SLEEP_DURATION:=0.01}  # default to 1 second, use to speed up tests
+SLEEP_DURATION=${SLEEP_DURATION:=0.0001}  # default to 1 second, use to speed up tests
 space_reserved=6   # reserved width for the percentage value
 duration=100
 elapsed=1
 columns=$(tput cols) # total characters of terminal width
 space_available=$(( columns-space_reserved ))
 
-if (( duration < space_available )); then
+if [[ duration -gt space_available ]] ; then
     	fit_to_screen=1;
 else
-  fit_to_screen=$(( duration / space_available ));
-  fit_to_screen=$((fit_to_screen+1));
+  fit_to_screen=(( duration / space_available ));
+  fit_to_screen=((fit_to_screen+1));
 fi
+
 
 DIR="$1"
 #  MODE option for futuer implementation
-MODE=0 # "0 - Normal, 1 - Test, 2 - Debug"
+
+MODE=0 # "Normal=0, Test=1"
+TESTLINES=100
+### WARNING ###
+
+#  Need to fix DRIVE and MOUNT
+DRIVE=12
+
+
 # failsafe - fall back to current directory
 [ "$DIR" == "" ] && DIR="."
 
@@ -83,18 +98,27 @@ echo "DIR is '$DIR'"
 
 start=$(date +%s.%N)
 
+infile="testdir"
+infile="$DIR/mnt/D$DRIVE/$infile"
+[ "$infile" == "" ] && { echo "Usage: $0 directory"; exit 1; }
+
+directory="$DIR/CSV"   #Path for CVS outfile
+
+### Check for dir, if not found create it using the mkdir ##
+[ ! -d "$directory" ] && mkdir -p "$directory"
+
+outfile="$directory/testdir.D$DRIVE"
+
 #TODO  FIX and ADD a Progress BAR for LAGE file processing.
 # Depends on mode LIVE, TEST or DEBUG
-if [[ $mode -eq 0 ]] ; then
-    infile="testdir"
+if [[ $MODE -eq 0 ]] ; then
     echo "Running in LIVE MODE"
 else
-    infile="testdocwithbreaks.txt"
-    echo "Running in TEST MODE"
+    mv $infile $infile.all
+    head -n $TESTLINES $infile.all > $infile.$TESTLINES
+    cp $infile.$TESTLINES $infile
+    echo "Running in TEST MODE on first $TESTLINES lines"
 fi
-
-outfile="$DIR/out/$infile"
-infile="$DIR/in/$infile"
 
 #Getting age of input file
 BIRTHDATE=$(stat -c %w $infile)
@@ -151,28 +175,45 @@ lines=$(gawk 'END { print NR }' $infile)
 ##     FREESPACE:           280
 ####  Creating Directory listings
 
-DRIVEID="DO3"   # Change to your drive id
-
 #  OLD method
 # sed -e 's# \.\(\/.*\)#\t"root\1#g' $infile > $outfile.tmp
 
 # CONFIRM input files
 echo "Input file for processing is $infile ($LASTMODDATE) and "
 echo "it has $lines lines to process."
-echo "NOTE:$infile.log1 was created for unprocessed lines."
+echo "NOTE:$infile.log was created for unprocessed lines."
 
 #Create clean files and save bad lines or links to filename.log1
 mv $infile  $infile.tmp
+
+
+echo -e	"Running $SOURCE  -  Version $version
+==========================================================
+MODE $(if [[ $MODE -eq 0 ]] ; then
+    echo "Running in LIVE MODE"
+else
+    echo "Running in TEST MODE with $TESTLINES lines"; fi; )
+
+Input file for processing is $infile ($LASTMODDATE) and
+it has $lines lines to process.
+NOTE:$infile.log will list any unprocessed lines below
+----------------------------------------------------------
+" > $infile.log
+
 #exclude lines begingin with "l" which are filelinks
-grep -v '^-' $infile.tmp > $infile.log1  # remove links and over runlines
+grep -v '^-' $infile.tmp >> $infile.log  # remove links and over runlines
 grep  '^-' $infile.tmp > $infile #send other lines to read file
 
 # add '""' to the filepath and adds "/mnt/$DRIVEID" instead of "./"
 #Special case
-sed 's|\(.*[0-9][0-9]\) \.\(/.*\)$| \1\t/mnt/$DRIVEID\2|g' $infile > $infile.1
+printf  "....Fixing Drive root ID to /mnt/D$DRIVE  " ;
+sed "s|\(.*[0-9][0-9]\) \.\(/.*\)$| \1\t/mnt/D$DRIVE\2|g" $infile > $infile.1
 # check for root
+printf  "  <<DONE>>\n";
+echo
 
 #PRINT HEADER for Output csv
+echo "Creating $outfile.csv"
 echo -e "PERMISSION\tTYPE\tUSER\tGROUP\tSIZE\tDATE\tFILE\tEXT\tPATH" > $outfile.csv
 
 ###  Start reading file loop ##################################################
@@ -195,24 +236,23 @@ while read line; do
   elapsed=$progressbar_int   #  roundup
     already_done; remaining; percentage
     sleep "$SLEEP_DURATION"
-    #clean_line
+    clean_line
     clean_line
  ## //PROGRESS bar         ##################################################
 
-  ## Seperqate Path/File from Attributes  file ###############################
+  ## Seperate Path/File from Attributes  file ###############################
 #> TODO reading each line  NOTE the DRIVE is HARD CODED
 
-  filepath=$(echo "$line"   | sed -e 's|^\(.*\)\(\/mnt.*\)$|\2|g')
-  attributes=$(echo "$line" | sed -e 's|^\(.*\)\(\/mnt.*\)$|\1|g')
+  filepath=$(echo "$line"   | sed -e "s|^\(.*\)\(\/mnt/D$DRIVE.*\)$|\2|g")
+  attributes=$(echo "$line" | sed -e "s|^\(.*\)\(\/mnt/D$DRIVE.*\)$|\1|g")
   filename="$(basename "$filepath")"
-
   extension=""
   STR="${filepath##*.}"
   SUB="/" # no extension as it contains /
   if [[ "$STR" =~ .*"$SUB".* ]]; then
        extension=" "
       else
-       extension="${filepath##*.}"    
+       extension="${filepath##*.}"
   fi
   path="${filepath%/*}"
   attrb="$attributes"  #need to make sure string is quoted
@@ -235,6 +275,10 @@ while read line; do
   n=$((n+1))
 done < $infile.1
 rm $infile.1
+rm $infile.tmp
+rm $infile
+rm $infile.$TESTLINES    #remove the test
+mv $infile.all $infile   #replace back the orginal
 
 ### /End reading file loop  ##################################################
 
@@ -258,4 +302,10 @@ runtime_sec=$( echo "$runtime" | awk '{print ($0-int($0)<0.499)?int($0):int($0)+
 runtime_long=$(printf "%d:%02d:%02d:%02.4f\n" $dd $dh $dm $ds)
 echo " $lines lines processed. Time taken was $runtime_sec sec ($runtime_long)"
 echo " OUTPUT is $outfile.csv"
+
+echo "
+----------------------------------------------------------
+ $lines lines processed. Time taken was $runtime_sec sec ($runtime_long)
+OUTPUT is $outfile.csv"  >> $infile.log
+
 exit 0
