@@ -13,6 +13,7 @@
 
 * |
  **Test with grep:**
+ 
       grep "^[^-;]" in/testdir
 
       grep "^[-;]" in/testdir
@@ -36,8 +37,18 @@
 * [ ] **Catch errors**  Must have error catching rountine.
 
 
-
 ## Design Goals
+* Error tolerant design - ....
+* Fast and lightweight
+  * Memory-efficient data structures
+* Rules based
+  * Adheres to
+* Simple and maintainable over time
+  * Testable
+* Written in
+
+## Get Started
+---
 
 
 ____
