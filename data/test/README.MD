@@ -18,14 +18,13 @@
 
       grep "^[-;]" in/testdir
 
-1. solution separate testdir file into two files.
-  a.use in/testdocwithbreaks.txt and test file.
-    Find links and lines not starting with "-" and push to new file errorfile.longest
-  b. Find lines starting with "-" and send to new testdir-tmp for futher Processing
-  c. If the file if too big, how about splitting and running multi process?
+1. 
+  a. Find links and lines not starting with "-" and push to new log file.
+  b. Find lines starting with "-" and send to new file for futher processing
+  c. If the file is too big, how about splitting and running multi processess?
   d. What is the ideal size,  max file size to chunk for multi process?
 
-2. Make sure that output file has not linebreaks and other character errors.
+2. Make sure that output file has no linebreaks and other character errors.
   a. test again for issues
 
 * [ ] **Lines with symbolic links:**   TEST file_big in the **in/**  for links and identify if hard or soft links.  Do we remove links first.  Problem with two line wraps
@@ -49,9 +48,6 @@
 
 ## Get Started
 ---
-
-
-____
 
 ## TODO
 | VERSION        | ITEM                               | Description                                    |
