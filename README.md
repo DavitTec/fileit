@@ -37,7 +37,7 @@ with the help of the included spreadsheet (FileIT.ods).
 By changing the contents if the columns under the LEVEL1-6 will change the first
 column that can be used to cut and paste into you own new bash script.
 
-<mark>:exclamation:	WARNING </mark> ..    always check and test your script before deployment.
+<mark>:exclamation: WARNING </mark> ..    always check and test your script before deployment.
 
 
 Spreadsheet download :
@@ -80,7 +80,6 @@ Discussions
 
 
 ## Contributing
-
 
 If you are interested in joining our efforts, please read the [contribute.md](contribute.md).
 
