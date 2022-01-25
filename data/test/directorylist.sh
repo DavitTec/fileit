@@ -1,41 +1,6 @@
 #! /usr/bin/env bash
 version=0.05.8
 
-# HEADER fileit test Directory list file modification script
-# AUTHOR David Mullins (DAVit) @2022 Jan
-# to prepare file for data import
-#
-# Processing filenames using an array
-# Sometimes you need read a file into an array as
-# one array element per line. Following script will
-# read file names into an array and you can process each file
-# using for loop. This is useful for complex tasks:
-
-# TODO  
-#  [ ] file array loop DISABLED
-#  [ ]  Check standalone or CALLED by prog
-#  [ ]  check that calling prog version is not behind this version
-#  [ ]  File array loop DISABLED
-#  [ ]  FIX  Replace any hard coding of input filenames and paths
-#  [ ]  NEED to establish a more efficient populate database
-#  [ ]  NEED to include Time estimate and a Progress bar
-#            this process may that >hours depending on input file size
-#  [ ]  NEED Catch errors and Quit options
-#  [ ]  NEED large input file takes too long to process - how about Multi-process?
-#  [ ]  NEED to offer simpler methods of splitting large input files
-#  [ ]  NEED to present OPTIONS and USAGE
-#  [ ]  NEED to SPLIT LARGE CSV
-# https://www.cyberciti.biz/tips/handling-filenames-with-spaces-in-bash.html
-# https://unix.stackexchange.com/questions/236029/bash-how-do-you-return-file-extensions/236036
-
-
-#https://betterprogramming.pub/how-to-split-a-large-excel-file-into-multiple-smaller-files-664f18f97900
-
-#####################################################################
-# Default scale used by float functions.
-# src https://www.linuxjournal.com/content/floating-point-math-bash
-float_scale=2
-#####################################################################
 # Evaluate a floating point number expression.
 
 function float_eval()
@@ -50,8 +15,6 @@ function float_eval()
     echo $result
     return $stat
 }
-#####################################################################
-
 
 ### ProgressBar
 SLEEP_DURATION=${SLEEP_DURATION:=0.0001}  # default to 1 second, use to speed up tests
@@ -130,53 +93,6 @@ LASTMODYEAR=${VALUES[0]}
 # Get numbers of lines in file
 lines=$(gawk 'END { print NR }' $infile)
 
-## read all file name into an array
-# fileArray=($(find $DIR -type f))
-# FIND (\ \.\/.*\b)
-# REPLACE "\1"
-# echo "create new file TOP" > $outfile
-
-# This was supposed to alter file with adding "root" but now necessary
-# condition of file but be in a format presneted by the
-# NOTE...THIS WILL PRINT NON printable characters, Line return etc,
-##    You must clean the OUTPUT file to make one line per file.
-##    DO THIS FIRST to remove
-##    to rename all files containing line feed in current folder and
-##    sub-folder, by combining find command with rename -
-##    Check to see if errors and or remaing bad names files#
-##    Here, find command locates all files containing line feed and
-##    rename command replaces every line feed in the name with a space.
-##    The same can be done for any other such problematic characters such as
-#     carriage return (\r).
-# NOTE: THIS IS NOT removing bad characters
-# NOTE: Running the following command assumes root privileges and from "/mnt"
-#       or change the Source to the target folder.
-#       Drives are usually mounted in the "/mnt" folder
-#
-#  - This will rename some bad file names recursively - TEST first
-#  find -name $'*\n*' -exec rename  $'s|\n| |g' '{}' \;
-#  - This will collect file list (inc links) into a new input file in table
-#    format. But this will include files with hidden or bad file name characters
-#    and possible extra line feeds.
-#
-# find . ! -type d -exec ls -lnt {} + > in/directorylist.txt
-#
-#
-#### Example Disk information
-##       It would be helpful to collect Drive infor first and add to Database
-####  DISK INFORMATION
-##     MAKE:                SAMSUNG
-##     MODEL:               ST1000DM005
-##     SIZE:                1000GB
-##     SERIAL:              NO:S246J9EC424741
-##     PARTITION FORMAT:    Ext4 (version 1.0)
-##     LAST CHECKED:        27/01/2020
-##     STATUS:
-##     FREESPACE:           280
-####  Creating Directory listings
-
-#  OLD method
-# sed -e 's# \.\(\/.*\)#\t"root\1#g' $infile > $outfile.tmp
 
 # CONFIRM input files
 echo "Input file for processing is $infile ($LASTMODDATE) and "
