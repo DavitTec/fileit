@@ -64,6 +64,7 @@ Contribute towards better planet [**Plant a tree with your label**](https://osic
 <p>
   <a href="https://www.paypal.me/DavitTec" target="_blank">
       <img height="50" alt="Support with Paypal" src="lib/img/paypal-donate.png"/></a>
+            
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/DavitTec)
 [![become-a-backer](https://opencollective.com/fileit/backers.svg?width=890)](https://opencollective.com/fileit#backers)
 
