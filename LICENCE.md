@@ -1,10 +1,10 @@
-	fileit - New fileme project
+	fileit  project
 
 
 
   Copyright (C) 2022 Davit
 
-  fileme is free software; you can redistribute it and/or modify
+  FileIT is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation; either version 2 of the License, or
   (at your option) any later version.

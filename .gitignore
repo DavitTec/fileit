@@ -25,3 +25,13 @@ testarea/**
 *.bkup
 
 #connect/**
+
+# Node
+.DS_Store
+node_modules
+npm-debug.log
+
+## fonfontawesome-free-6.1.1-web
+## can be downloads from https://fontawesome.com/docs/web/setup/host-yourself/webfonts
+##
+public/fontawesome-free-6.1.1-web

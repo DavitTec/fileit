@@ -1,0 +1,51 @@
+{
+    "__comment__": "For more info https://code.visualstudio.com/docs/getstarted/settings",
+    "files.autoSave": "afterDelay",
+    "workbench.startupEditor": "readme",
+    "workbench.editor.enablePreview": true,
+    "workbench.cloudChanges.autoResume": "off",
+    "[markdown]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
+    },
+    "workbench.editorAssociations": {
+        "*.md": "vscode.markdown.preview.editor",
+    },
+    "editor.fontSize": 12,
+    "editor.tabSize": 2,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "makefile.additionalCompilerNames": [
+        "node"
+    ],
+    "makefile.alwaysPreConfigure": true,
+    "makefile.configurations": [
+        {
+            "name": "Default",
+            "makeArgs": []
+        },
+        {
+            "name": "fileit",
+            "makeArgs": [
+                "PROJECT=fileit-test"
+            ]
+        },
+        {
+            "name": "Print make version",
+            "makeArgs": [
+                "--version"
+            ]
+        }
+    ],
+    "makefile.makefilePath": "build",
+    "makefile.preConfigureScript": "Makefile",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "brave-browser",
+}
