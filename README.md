@@ -1,6 +1,6 @@
 # <a href="https://github.com/DavitTec/fileit"><img border="0" alt="FileIT" src="lib/img/FileIT.png" height="50"></a><a href="https://davit.ie/"><img border="0" alt="DAVIT" src="./assets/DAVIT.png" height="20"></a>
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/davittec/fileme/CI?style=plastic)
-![version](https://img.shields.io/badge/version-0.0.13-Alpha-red?style=plastic)
+![version](https://img.shields.io/badge/version.0.13-Alpha-red?style=plastic)
 ![Debian package](https://img.shields.io/debian/v/bash/unstable?color=red&label=bash&style=plastic)
 <a href="https://twitter.com/intent/follow?screen_name=_davit">        <img src="https://img.shields.io/twitter/follow/_davit?style=social&logo=twitter"
             alt="follow on Twitter"></a>
